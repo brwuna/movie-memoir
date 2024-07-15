@@ -24,20 +24,11 @@ export const ContainerNewNote = styled.div`
         background-color: ${({ theme }) => theme.COLORS.PINK};
         border-radius: 0.8rem;
     }
-
-    /* .tags {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    } */
 `;
 
 export const Form = styled.form`
     max-width: 55rem;
     margin: 38px auto;
-
-    /* display: flex;
-    flex-direction: column; */
 
     > header {
         display: flex;
@@ -51,12 +42,12 @@ export const Form = styled.form`
             font-weight: 500;
         }
 
-        a {
+        button {
             display: flex;
-            gap: 0.4rem;
 
-            font-size: 14px;
             color: ${({ theme }) => theme.COLORS.PINK};
+            background: none;
+            border: none;
 
             margin-bottom: 24px;
         }
@@ -77,7 +68,7 @@ export const Form = styled.form`
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 1.5rem;
+        gap: 1rem;
 
         max-width: 100%;
     }

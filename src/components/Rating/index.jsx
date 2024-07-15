@@ -5,7 +5,7 @@ export function Rating({ grade, isBigSize}) {
     let stars = [];
     
     for (let i = 0; i < 5; i++) {
-        if (i <= grade) {
+        if (i < grade) {
             stars.push(<AiFillStar key={i} />)
         } else {
             stars.push(<AiOutlineStar key={i} />)

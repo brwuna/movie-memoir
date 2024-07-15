@@ -18,6 +18,11 @@ export const ContainerProfile = styled.div`
             color: ${({ theme }) => theme.COLORS.PINK};
             font-size: 24px;
         }
+
+        button {
+            background: none;
+            border: none;
+        }
     }
 `;
 

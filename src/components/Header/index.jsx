@@ -1,7 +1,20 @@
+import { useAuth } from "../../hooks/auth";
+import { api } from "../../services/api";
 import { HeaderContainer, Brand, Profile, Search, Logout } from "./styles"
 import { ImExit } from "react-icons/im";
-
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg"
+import { useNavigate } from "react-router-dom";
 export function Header({ children }) {
+    const { signOut, user } = useAuth();
+    const navigate = useNavigate();
+
+    function handleSignOut() {
+        navigate("/")
+        signOut();
+    }
+
+    const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
+    
     return(
         <HeaderContainer>
             <Brand>
@@ -14,14 +27,14 @@ export function Header({ children }) {
 
             <Profile to="/profile">
                 <div>
-                    <strong>Bruna Nascimento</strong>
-                    <Logout>
-                        <ImExit />
-                        Sair
-                    </Logout>
+                    <strong>{user.name}</strong>   
                 </div>
-                    <img src="https://github.com/brwuna.png"/>
+                <img src={avatarURL} alt={user.name} /> 
             </Profile>
+
+            <Logout onClick={handleSignOut}>
+                <ImExit />
+            </Logout>
 
         </HeaderContainer>
     )

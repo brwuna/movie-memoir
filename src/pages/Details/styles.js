@@ -24,11 +24,19 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
 
-    > span:first-child svg {
+    .btns {
+        display: flex;
+        justify-content: space-between;
+
+        > span:first-child svg {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         color: ${({ theme }) => theme.COLORS.PINK};
+        cursor: pointer;
+        }
+
+
     }
 
     > span p {

@@ -32,6 +32,8 @@ export const ContainerNoteItem = styled.div`
 
         padding: 12px;
 
+        text-align: left;
+
         color: ${({ theme }) => theme.COLORS.WHITE};
         background: transparent;
 

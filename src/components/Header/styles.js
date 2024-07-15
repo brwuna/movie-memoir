@@ -29,34 +29,59 @@ export const Brand = styled.div`
     }
 `;
 
-export const Profile = styled(Link)`
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
+// export const Profile = styled(Link)`
+//     display: flex;
+//     align-items: center;
+//     gap: 0.8rem;
 
-        > div {
-            display: flex;
-            flex-direction: column;
-            margin-left: 16px;
-            line-height: 24px;
+//         img {
+//             width: 56px;
+//             height: 56px;
+//             border-radius: 50%;
+//         }
 
-            span {
-                font-size: 14px;
-                color: ${({ theme }) => theme.COLORS.GRAY_100};
-            }
+//         > div {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-end;
+//             justify-content: center;
+//             margin-left: 16px;
+//             line-height: 24px;
 
-            strong {
-                font-size: 18px;
-                color: ${({ theme }) => theme.COLORS.WHITE};
+//             a {
+//                 font-size: 14px;
+//                 color: ${({ theme }) => theme.COLORS.GRAY_100};
+//             }
+
+//             strong {
+//                 font-size: 18px;
+//                 color: ${({ theme }) => theme.COLORS.WHITE};
             
-            }
-        }
+//             }
+//         }
+// `;
 
-        img {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-        }
+export const Profile = styled(Link)`
+  display: flex;
+  align-items: center;
+
+  > img {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+  }
+
+  > div {
+    margin-right: 0.9rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+
+    height: 4rem;
+
+    strong {
+      color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+  }
 `;
 
 export const Search = styled.div`
@@ -71,13 +96,20 @@ export const Logout = styled.button`
     background: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
 
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: end;
-    gap: 0.5rem;
+    gap: 0.5rem; */
+
+    position: absolute;
+    bottom: 1.8rem;
+    right: 10.6rem;
 
     > svg {
         color: ${({ theme }) => theme.COLORS.PINK};
-        font-size: 14px;
+        font-size: 20px;
+
+        display: flex;
+        align-items: center;
     }
 `
