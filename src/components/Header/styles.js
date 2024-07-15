@@ -29,38 +29,6 @@ export const Brand = styled.div`
     }
 `;
 
-// export const Profile = styled(Link)`
-//     display: flex;
-//     align-items: center;
-//     gap: 0.8rem;
-
-//         img {
-//             width: 56px;
-//             height: 56px;
-//             border-radius: 50%;
-//         }
-
-//         > div {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-end;
-//             justify-content: center;
-//             margin-left: 16px;
-//             line-height: 24px;
-
-//             a {
-//                 font-size: 14px;
-//                 color: ${({ theme }) => theme.COLORS.GRAY_100};
-//             }
-
-//             strong {
-//                 font-size: 18px;
-//                 color: ${({ theme }) => theme.COLORS.WHITE};
-            
-//             }
-//         }
-// `;
-
 export const Profile = styled(Link)`
   display: flex;
   align-items: center;
