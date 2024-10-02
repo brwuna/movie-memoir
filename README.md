@@ -1,8 +1,35 @@
-# React + Vite
+<h1 align="center">
+   Movie Memoir 🎬
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-Currently, two official plugins are available:
+## 💻 Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Movie Memoir trata-se de uma aplicação que você pode criar sua conta e adicionar notas sobre seus filmes favoritos.
+<br>
+
+<p>
+  <img src="https://i.imgur.com/12vrlIf.png" alt="Foto do Projeto" />
+</p>
+<br>
+
+## 🔧 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- ReactJS
+- Styled-Components
+- Express
+- Multer
+- SQLite
+- Knex
+- JWT
+- Git e Github
+- Netlify
+
+## 🚀 Deploy
+- movie-memoir.netlify.app/
